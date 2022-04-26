@@ -10,6 +10,8 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -66,6 +68,30 @@ class AddStoryFragment : Fragment() {
     return binding.root
   }
   
+  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    super.onViewCreated(view, savedInstanceState)
+    storyFactory = StoryViewModelFactory.getInstance(requireActivity())
+    binding.bUpload.isEnabled = false
+    binding.bCamera.setOnClickListener { startTakePhoto() }
+    binding.bGallery.setOnClickListener { startGallery() }
+    binding.bUpload.setOnClickListener { uploadImage() }
+    
+    val afterTextChangedListener = object : TextWatcher {
+      override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+      override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
+        binding.bUpload.isEnabled = checkDescValid(binding.editDesc.text.toString())
+      }
+      override fun afterTextChanged(s: Editable) {}
+    }
+    
+    binding.editDesc.addTextChangedListener(afterTextChangedListener)
+  }
+  
+  private fun checkDescValid(text: String): Boolean {
+    return text.isNotEmpty()
+  }
+  
+  
   private fun showProgressDialog(message: String) {
     progressDialog.apply {
       setMessage(message)
@@ -76,17 +102,6 @@ class AddStoryFragment : Fragment() {
   
   private fun hideProgressDialog() {
     progressDialog.dismiss()
-  }
-  
-  
-  override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    super.onViewCreated(view, savedInstanceState)
-    storyFactory = StoryViewModelFactory.getInstance(requireActivity())
-    
-    binding.bCamera.setOnClickListener { startTakePhoto() }
-    binding.bGallery.setOnClickListener { startGallery() }
-    binding.bUpload.setOnClickListener { uploadImage() }
-    
   }
   
   private fun startGallery() {
