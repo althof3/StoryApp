@@ -1,0 +1,70 @@
+1. LoginViewModel
+    a. berhasil Login
+        - mengembalikan Result.Success
+        - mengembalikan atribut user yang lengkap
+    b. gagal login
+        - mengembalikan Result.Error
+    c. status login
+        - mengembalikan true saat terdapat sesi login
+    d. status logout
+        - mengembalikan false saat tidak terdapat sesi login
+    e. form validasi email & password lolos
+        - mengembalikan nilai true
+    f. form validasi email & password gagal
+        - mengembalikan nilai false
+
+2. RegisterViewModel
+    a. berhasil Register
+        - mengembalikan Result.Success
+        - mengembalikan nilai true
+    b. gagal register
+        - mengembalikan Result.Error
+    c. form validasi email & password lolos
+        - mengembalikan nilai true
+    d. form validasi email & password gagal
+        - mengembalikan nilai false
+
+3. StoryViewModel
+    a. berhasil mengambil data list story dalam bentuk paging
+        - mengembalikan objek paging berisi StoryEntity
+    b. mengambil list story dalam bentuk livedata
+        - mengembalikan Result.Success
+        - mengembalikan list StoryEntity
+    c. mengambil username yang sudah login
+        - mengembalikan nilai string dari username yg sedang login
+    d. mengecek jika sudah login
+        - mengembalikan nilai true
+    e. upload story
+        - mengecek bahwa repositroy terpanggil
+
+4. StoryRepository
+    a. mengambil list story dari database
+        - mengembalikan livedata list of StoryEntity
+    b. mengambil username yang sudah login
+        - mengembalikan nilai string dari username yg sedang login
+    c. logout user session
+        - memastikan token terhapus terpanggil
+    d. mengecek jika sudah login
+        - mengembalikan nilai true
+    e. mengambil paging story
+        - mengembalikan list story
+    f. post story
+        - memastikan memanggil API call post story
+
+5. RegisterRepository
+    a. register sukses
+        - mengembalikan Success dengan nilai true
+
+6. LoginRepository
+    a. login sukses
+        - nilai kembalian tidak null
+        - mengembalikan Success
+        - mengembalikan livedata objek User
+    b. set current user ke preference
+        - memastikan preference menyimpan objek User
+    c. mengecek jika sudah login
+        - mengembalikan nilai true
+
+7. ListStoryCardsFragment
+    a. sukses fetch stories
+        - menampilkan list stories dari mock API

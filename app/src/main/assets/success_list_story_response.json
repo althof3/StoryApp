@@ -1,0 +1,51 @@
+{
+  "error": false,
+  "message": "Stories fetched successfully",
+  "listStory": [
+    {
+      "id": "story-ImB1KG52s58nRjZV",
+      "name": "test",
+      "description": "123",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650782454252_X70kZSZd.jpg",
+      "createdAt": "2022-04-24T06:40:54.253Z",
+      "lat": -6.90116,
+      "lon": 107.68138
+    },
+    {
+      "id": "story-3DGoUfFlXXwwT4NC",
+      "name": "Naufal Nibtos",
+      "description": "Around",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650781967127_WF4_YlPo.jpg",
+      "createdAt": "2022-04-24T06:32:47.129Z",
+      "lat": -7.482471,
+      "lon": 112.7368319
+    },
+    {
+      "id": "story-T-Lyl836Nq5QSCS7",
+      "name": "yui",
+      "description": "lalalal",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650781340419_RnHVC4en.jpg",
+      "createdAt": "2022-04-24T06:22:20.420Z",
+      "lat": -7.333331666666667,
+      "lon": 112.78858333333334
+    },
+    {
+      "id": "story-MvQgvN4dtgZBSY_B",
+      "name": "ok",
+      "description": "description here",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650781277428_-yMnCXyG.jpg",
+      "createdAt": "2022-04-24T06:21:17.430Z",
+      "lat": 5.3453,
+      "lon": 110.12312
+    },
+    {
+      "id": "story-XdPNY_Zh0xIOM70Y",
+      "name": "ok",
+      "description": "description here",
+      "photoUrl": "https://story-api.dicoding.dev/images/stories/photos-1650781247417_K8uFB1oW.jpg",
+      "createdAt": "2022-04-24T06:20:47.419Z",
+      "lat": 5.3453,
+      "lon": 110.12312
+    }
+  ]
+}

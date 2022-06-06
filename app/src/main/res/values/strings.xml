@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MyStoryApp</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="welcome">Welcome! %1$s</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_up">Sign up</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="story_app">Story App</string>
+    <string name="welcome_again_in_story_app">Welcome again in Story App, Login or Register to get started!</string>
+    <string name="login">Login</string>
+    <string name="register_message">Don\'t have an account? Register here!</string>
+    <string name="login_message">have an account? Login here!</string>
+    <string name="loading_message">Application is loading, please wait</string>
+    <string name="register_title">Register</string>
+    <string name="name">Name</string>
+    <string name="avatar">avatar</string>
+    <string name="description">description</string>
+    <string name="created_at">created at</string>
+    <string name="hi_nama">Hi, nama</string>
+    <string name="logout">Logout</string>
+    <string name="user_name">User Name</string>
+    <string name="profile_picture">profile picture</string>
+    <string name="deskripsi">deskripsi</string>
+    <string name="greet_user">Hi, %1$s</string>
+    <string name="photo_by">Photo by</string>
+    <string name="add_story">add story</string>
+    <string name="image_preview">image preview</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload">Upload</string>
+    <string name="upload_loading">Upload file on Progress</string>
+    <string name="upload_success">Upload file Successful</string>
+    <string name="upload_failed">Upload file was Failed</string>
+    <string name="settings">settings</string>
+    <string name="appwidget_text">STORY BANNER</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="empty">empty</string>
+    <string name="cardView">Card View</string>
+    <string name="mapView">Map View</string>
+    <string name="tablayout_list_story">tablayout list story</string>
+    <string name="retry">Retry</string>
+    <string name="location_not_found">Location is not found. Try Again</string>
+    <string name="permission_not_given">permission not given.</string>
+
+
+</resources>
